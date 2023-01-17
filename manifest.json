@@ -1,0 +1,25 @@
+{
+    "name": "change background",
+    "description" : "Base Level Extension",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "popup.png"
+    },
+    "options_page": "options.html",
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default":"Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Open popup.html"
+        }
+    },
+    "permissions":["storage", "declarativeContent", "activeTab"],
+    "background": {
+        "scripts":["background.js"],
+        "persistent": true
+    }
+}
