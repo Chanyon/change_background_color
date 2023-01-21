@@ -28,6 +28,9 @@ chrome.runtime.onInstalled.addListener(function () {
 					new chrome.declarativeContent.PageStateMatcher({
 						pageUrl: { hostEquals: "ziglnag.org" },
 					}),
+					new chrome.declarativeContent.PageStateMatcher({
+						pageUrl: { hostEquals: "sxwangzhiwen.github.io" },
+					}),
 				],
 				actions: [new chrome.declarativeContent.ShowPageAction()],
 			},

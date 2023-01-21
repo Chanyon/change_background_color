@@ -1,7 +1,7 @@
 {
     "name": "change background",
     "description" : "Base Level Extension",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "manifest_version": 2,
     "browser_action": {
         "default_popup": "popup.html",
@@ -23,7 +23,7 @@
         "persistent": true
     },
     "content_scripts":[{
-        "matches": ["https://ziglang.org/*"],
+        "matches": ["https://ziglang.org/*", "https://sxwangzhiwen.github.io/*"],
         "js": ["/content.js"]    
     }]
 }

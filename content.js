@@ -14,7 +14,27 @@ const randomIdx = randomNum(bgcolor.length);
 document.body.style.backgroundColor = `${bgcolor[randomIdx]}`;
 document.querySelector("#contents").style.color = "#eee";
 
-function randomNum(length) {
-	return Math.floor(Math.random() * length)
+const uri = window.location.host;
+
+if (uri === "sxwangzhiwen.github.io") {
+	document.querySelectorAll("a").forEach((item) => {
+		item.style.color = "#eee";
+	});
+	document.querySelectorAll("p> a").forEach((item) => {
+		item.style.color = "#ccc";
+	});
+	document.querySelectorAll("p > code").forEach((item) => {
+		item.style.color = "#000";
+	});
+	document.querySelectorAll("figure > pre > code > span.line")
+		.forEach((item) => {
+			item.style.color = "#000";
+	});
+	document.querySelectorAll("#navigation > ul > li > a").forEach((item) => {
+		item.style.color = "#49c0ee";
+	});
 }
 
+function randomNum(length) {
+	return Math.floor(Math.random() * length);
+}
