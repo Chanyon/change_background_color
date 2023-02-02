@@ -15,6 +15,7 @@ chrome.runtime.onInstalled.addListener(function () {
 				"#0b2637",
 				"hsl(210deg, 30%, 8%)",
 				"#182635",
+				"#191b1f"
 			],
 		},
 		function () {

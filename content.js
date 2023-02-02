@@ -10,6 +10,8 @@ const bgcolor = [
 	"#0b2637",
 	"hsl(210deg, 30%, 8%)",
 	"#182635",
+	"#181818",
+	"#191b1f"
 ];
 const randomIdx = randomNum(bgcolor.length);
 
